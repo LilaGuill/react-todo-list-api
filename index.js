@@ -8,7 +8,7 @@ require("dotenv").config();
 app.use(middlewareFormidable());
 app.use(cors());
 
-mongoose.connect("process.env.MONGODB_URI", {
+mongoose.connect(process.env.MONGODB_URI, {
   useCreateIndex: true,
   useUnifiedTopology: true,
   useNewUrlParser: true
@@ -21,7 +21,7 @@ const Todo = mongoose.model("Todo", {
 });
 
 app.post("/create", async (req, res) => {
-  await Todo.remove();
+  await Todo.deleteMany();
 
   const newTodo = new Todo({
     task: req.fields.task
