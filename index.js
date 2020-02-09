@@ -28,14 +28,14 @@ app.post("/create", async (req, res) => {
   });
   await newTodo.save();
 
-  res.send(newTodo);
+  res.json(newTodo);
   try {
   } catch (error) {
-    res.send(error.message);
+    res.json(error.message);
   }
 });
 app.all("/", (res, req) => {
-  res.send("route not found");
+  res.status(400).json("route not found");
 });
 app.listen(process.env.PORT, (req, res) => {
   console.log("server started");
