@@ -16,16 +16,19 @@ mongoose.connect(process.env.MONGODB_URI, {
 
 const Todo = mongoose.model("Todo", {
   task: {
-    type: Object
+    type: String
+  },
+  isChecked: {
+    type: Boolean
   }
 });
 
 app.post("/create", async (req, res) => {
-  await Todo.deleteMany();
-
-  const newTodo = new Todo({
-    task: req.fields.task
+  const newTodo = await new Todo({
+    task: req.fields.task,
+    isChecked: req.fields.isChecked
   });
+
   await newTodo.save();
 
   res.json(newTodo);
@@ -34,8 +37,9 @@ app.post("/create", async (req, res) => {
     res.json(error.message);
   }
 });
-app.all("/", (res, req) => {
-  res.status(400).json("route not found");
+
+app.all("*", (req, res) => {
+  res.status(404).send("Page introuvable");
 });
 app.listen(process.env.PORT, (req, res) => {
   console.log("server started");
