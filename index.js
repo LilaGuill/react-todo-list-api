@@ -4,9 +4,9 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const middlewareFormidable = require("express-formidable");
 
+require("dotenv").config();
 app.use(middlewareFormidable());
 app.use(cors());
-require("dotenv").config();
 
 mongoose.connect("process.env.MONGODB_URI", {
   useCreateIndex: true,
@@ -34,7 +34,9 @@ app.post("/create", async (req, res) => {
     res.send(error.message);
   }
 });
-
+app.all("/", (res, req) => {
+  res.send("route not found");
+});
 app.listen(process.env.PORT, (req, res) => {
   console.log("server started");
 });
