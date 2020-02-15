@@ -23,6 +23,14 @@ const Todo = mongoose.model("Todo", {
   }
 });
 
+app.get("/", async (req, res) => {
+  try {
+    const todos = await Todo.find();
+    res.json(todos);
+  } catch (error) {
+    res.json({ message: error.message });
+  }
+});
 app.post("/create", async (req, res) => {
   const newTodo = await new Todo({
     task: req.fields.task,
