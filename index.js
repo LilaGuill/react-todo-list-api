@@ -17,7 +17,7 @@ mongoose.connect(process.env.MONGODB_URI, {
 const Todo = mongoose.model("Todo", {
   task: {
     type: String,
-    tolowercase: true
+    lowercase: true
   },
   isChecked: {
     type: Boolean
@@ -42,7 +42,7 @@ app.post("/create", async (req, res) => {
 //read
 app.get("/", async (req, res) => {
   try {
-    const todos = await Todo.find();
+    const todos = await Todo.find().sort({ isChecked: 1 });
     res.json(todos);
   } catch (error) {
     res.json({ message: error.message });
