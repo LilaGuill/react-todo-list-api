@@ -1,10 +1,14 @@
 <h1 align="center">Todo List API</h1>
 
-**Server**
+## Server
+
+**Dependencies**
 
 - Express
 - Express-formidable
 - Mongoose
+- Cors
+- Dotenv
 
 **Architecture SCRUD**
 
@@ -49,7 +53,9 @@ npx nodemon index.js
 <p align="center">
   Demo:<a href="https://todolist-react-lg.netlify.com/" target="_blank"> https://todolist-react.netlify.com</a>
 </p>
+
 ## React Todo List Client
+
 <a href="https://github.com/LilaGuill/react-todo-list">https://github.com/LilaGuill/react-todo-list</a>
 
 ## Deployment
@@ -61,7 +67,3 @@ npx nodemon index.js
 ## Contact
 
 <a href="https://www.linkedin.com/in/lila-guillermic-66542476/" target="_blank">My Linkedin Profil</a>
-
-```
-
-```
