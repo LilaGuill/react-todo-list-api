@@ -1,4 +1,4 @@
-<h1 align="center">Todo List Api</h1>
+<h1 align="center">Todo List API</h1>
 
 <p align="center">
   <img width="500" src="https://github.com/LilaGuill/react-todo-list/blob/master/public/screen1.png" alt="capture-1">
@@ -7,46 +7,45 @@
 <p align="center">
   Demo:<a href="https://todolist-react-lg.netlify.com/" target="_blank"> https://todolist-react.netlify.com</a>
 </p>
-<p align="center">
- This project was bootstrapped with <a href=https://github.com/facebook/create-react-app. target="_blank">Create React App</a>
-</p>
 
-## Overview
+**Server**
 
-**Single page application, architecture CRUD**
+- Express
+- Express-formidable
+- Mongoose
 
-**Functionalities**
+**architecture SCRUD**
 
+- Search task
+  > > > > > > > c5a8ea06bcd86c62107e68c70050c5de91174951
 - Create task : save task in mongoDB database.
 - Read : get task from MongoDB
 - Update task : update the status isChecked of the task to false or true
 - Remove task : delete task from database
-- Search task
-
-**UI**
-
-- Homemade UI without framework
-- Responsive design
 
 ## Running the project
 
 Clone this repository :
 
-```
-git clone https://github.com/LilaGuill/react-todo-list.git
-cd react-todo-list
+git clone https://github.com/LilaGuill/react-todo-list-api.git
+cd react-todo-list-api
+
 ```
 
 Install packages :
 
 ```
+
 npm install
+
 ```
 
 When installation is complete, run the project with:
 
 ```
-npm start
+
+npx nodemon index.js
+
 ```
 
 ## Client
@@ -54,15 +53,19 @@ npm start
 - HTTP request with axios (Get, Post)
 - Hooks (useState, useEffect)
 
-## Server
 
-- Express
-- Express-formidable
-- Mongoose
+## Overview
 
-## React Todo List API
+  <p align="center">
+    <img width="500" src="https://github.com/LilaGuill/react-todo-list/blob/master/public/screen1.png" alt="capture-1">
+  </p>
 
-<a href="https://github.com/LilaGuill/react-todo-list-api">https://github.com/LilaGuill/react-todo-list-api</a>
+<p align="center">
+  Demo:<a href="https://todolist-react-lg.netlify.com/" target="_blank"> https://todolist-react.netlify.com</a>
+</p>
+## React Todo List Client
+<a href="https://github.com/LilaGuill/react-todo-list">https://github.com/LilaGuill/react-todo-list</a>
+
 
 ## Deployment
 
@@ -73,3 +76,4 @@ npm start
 ## Contact
 
 <a href="https://www.linkedin.com/in/lila-guillermic-66542476/" target="_blank">My Linkedin Profil</a>
+```
