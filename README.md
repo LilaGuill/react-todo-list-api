@@ -24,7 +24,7 @@ Clone this repository :
 
 ```
 git clone https://github.com/LilaGuill/todo-list-backend.git
-cd react-todo-list-api
+cd react-todo-list-backend
 ```
 
 Install packages :
