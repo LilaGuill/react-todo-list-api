@@ -56,7 +56,7 @@ npx nodemon index.js
 
 ## React Todo List Client
 
-<a href="https://github.com/LilaGuill/todolist-frontend.git">https://github.com/LilaGuill/todolist-frontend.git</a>
+<a href="https://github.com/LilaGuill/todo-list-frontend">https://github.com/LilaGuill/todo-list-frontend</a>
 
 ## Deployment
 
