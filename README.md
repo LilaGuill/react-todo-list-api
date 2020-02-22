@@ -1,4 +1,4 @@
-<h1 align="center">Todo List API</h1>
+<h1 align="center">Todo List backend </h1>
 
 ## Server
 
@@ -23,7 +23,7 @@
 Clone this repository :
 
 ```
-git clone https://github.com/LilaGuill/react-todo-list-api.git
+git clone https://github.com/LilaGuill/todo-list-backend.git
 cd react-todo-list-api
 ```
 
@@ -47,7 +47,7 @@ npx nodemon index.js
 ## Overview
 
   <p align="center">
-    <img width="500" src="https://github.com/LilaGuill/react-todo-list/blob/master/public/screen1.png" alt="capture-1">
+    <img width="500" src="https://github.com/LilaGuill/todo-list-frontend/blob/master/public/screen1.png" alt="capture-1">
   </p>
 
 <p align="center">
@@ -56,7 +56,7 @@ npx nodemon index.js
 
 ## React Todo List Client
 
-<a href="https://github.com/LilaGuill/react-todo-list">https://github.com/LilaGuill/react-todo-list</a>
+<a href="https://github.com/LilaGuill/todolist-frontend">https://github.com/LilaGuill/todolist-frontend</a>
 
 ## Deployment
 
