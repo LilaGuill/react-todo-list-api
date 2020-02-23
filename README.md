@@ -12,11 +12,11 @@
 
 **Architecture SCRUD**
 
-- Search task
-- Create task : save task in mongoDB database.
-- Read : get task from MongoDB
-- Update task : update the status isChecked of the task to false or true
-- Remove task : delete task from database
+- Search task : search in mongoDB database
+- Create task : save task in mongoDB database
+- Read : get task from mongoDB database
+- Update task : update in mongoDB database the status isChecked of the task to false or true
+- Remove task : delete task from mongoDB database
 
 ## Running the project
 
@@ -41,7 +41,8 @@ npx nodemon index.js
 
 ## Client
 
-- HTTP request with axios (Get, Post)
+- React
+- HTTP request with axios (get, post)
 - Hooks (useState, useEffect)
 
 ## Overview
